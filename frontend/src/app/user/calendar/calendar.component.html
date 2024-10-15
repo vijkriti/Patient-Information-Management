@@ -1,0 +1,28 @@
+<div class="calendar-header">
+  <button mat-icon-button (click)="prevYear()">
+    <mat-icon>keyboard_double_arrow_left</mat-icon>
+  </button>
+  <span>{{ selectedDate | date: 'yyyy' }}</span>
+  <button mat-icon-button (click)="nextYear()">
+    <mat-icon>keyboard_double_arrow_right</mat-icon>
+  </button>
+  <button mat-icon-button (click)="prevMonth()">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <span>{{ selectedDate | date: 'MMMM' }}</span>
+  <button mat-icon-button (click)="nextMonth()">
+    <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
+</div>
+<div class="calendar-body">
+  <div class="calendar-week-days">
+    <div *ngFor="let day of weekDays">{{ day }}</div>
+  </div>
+  <div *ngFor="let week of weeks" class="calendar-week">
+    <div *ngFor="let day of week" class="calendar-day" (click)="openAvailability(day)">
+      <span *ngIf="day.date">{{ day.date }}</span>
+      
+    <div class="availability-count" *ngIf="day.availabilityCount">{{ day.availabilityCount }}</div>
+    </div>
+  </div>
+</div>

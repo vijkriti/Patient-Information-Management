@@ -1,0 +1,88 @@
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .availability-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  .form-group {
+    display: inline-block; /* Display form groups inline */
+    margin-right: 20px; /* Adjust space between form groups */
+    vertical-align: top; /* Align form groups to the top */
+  }
+  
+  .form-group:last-child {
+    margin-right: 0; /* Remove margin from the last form group */
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form-group select,
+  .form-group input[type="datetime-local"] {
+    width: 200px; /* Adjust width of inputs */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .button-container button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  .button-container button:hover {
+    background-color: #5c6bc0;
+  }
+  
+  .button-container button[type="submit"] {
+    background-color: #4caf50;
+  }
+  
+  .button-container button[type="submit"]:hover {
+    background-color: #66bb6a;
+  }
+  
+  .button-container button[type="button"] {
+    background-color: #f44336;
+  }
+  
+  .button-container button[type="button"]:hover {
+    background-color: #ef5350;
+  }
+  
